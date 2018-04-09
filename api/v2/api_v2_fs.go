@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"context"
-	"github.com/thecodeteam/goisilon/api"
+	"github.com/adidenko/goisilon/api"
 )
 
 // ContainerChild is a child object of a container.

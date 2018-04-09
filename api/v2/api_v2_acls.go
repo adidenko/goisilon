@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"context"
-	"github.com/thecodeteam/goisilon/api"
+	"github.com/adidenko/goisilon/api"
 )
 
 // AuthoritativeType is a possible value used with an ACL's Authoritative field.

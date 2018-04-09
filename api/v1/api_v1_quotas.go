@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/thecodeteam/goisilon/api"
+	"github.com/adidenko/goisilon/api"
 )
 
 // GetIsiQuota queries the quota for a directory

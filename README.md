@@ -107,7 +107,7 @@ if err := c.DeleteVolume(context.Background(), "loremipsum"); err != nil {
 ### More Examples
 Several, very detailed examples of the GoIsilon package in use can be found in
 the package's `*_test.go` files as well as in the libStorage Isilon
-[storage driver](https://github.com/thecodeteam/rexray/blob/master/libstorage/drivers/storage/isilon/storage/isilon_storage.go).
+[storage driver](https://github.com/adidenko/rexray/blob/master/libstorage/drivers/storage/isilon/storage/isilon_storage.go).
 
 ## Contributions
 Please contribute!

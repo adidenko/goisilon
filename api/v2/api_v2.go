@@ -5,7 +5,7 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/thecodeteam/goisilon/api"
+	"github.com/adidenko/goisilon/api"
 )
 
 const (
