@@ -12,7 +12,6 @@ import (
 	"os"
 	"path"
 	"strconv"
-	"strings"
 	"time"
 
 	log "github.com/akutz/gournal"
@@ -192,10 +191,9 @@ func New(
 	}
 
 	resp := &apiVerResponse{}
-	if err := c.Get(ctx, "/platform/latest", "", nil, nil, resp); err != nil &&
-		!strings.HasPrefix(err.Error(), "json: ") {
-		return nil, err
-	}
+	// OneFS 7.2 does not have '/platform/latest' endpoint. So if it fails we
+	// will default to API version 2 and there's no need to handle errors here.
+	c.Get(ctx, "/platform/latest", "", nil, nil, resp)
 
 	if resp.Latest != nil {
 		i, err := strconv.ParseUint(*resp.Latest, 10, 8)
